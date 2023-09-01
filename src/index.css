@@ -15,7 +15,6 @@
     --cursive-font: "Dancing Script", cursive;
   }
   .section-min-heght {
-    background-color: red;
-    min-height: calc(100vh - 88px);
+    min-height: calc(100vh - 68px);
   }
 }

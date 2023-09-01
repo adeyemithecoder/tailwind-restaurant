@@ -6,7 +6,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
   return (
     <header className='bg-skin-dark-light w-full text-white fixed top-0 z-10'>
-      <section className='max-w-4xl mx-auto p-4 flex justify-between items-center '>
+      <section className='max-w-4xl mx-auto p-5 flex justify-between items-center '>
         <h1 className='text-3xl font-medium '>
           <img src={require("./images/icon.jpg")} width={40} alt='' />
         </h1>
@@ -26,27 +26,32 @@ const Navbar = () => {
           </button>
           <ul className='hidden text-xl space-x-8 md:flex'>
             <li className='cursor-pointer capitalize '>
-              <Link to='home' smooth={true} offset={500} duration={500}>
+              <Link to='home' smooth={true} duration={500}>
                 Home{" "}
               </Link>
             </li>
             <li className='cursor-pointer capitalize '>
-              <Link to='about' smooth={true} offset={-200} duration={500}>
+              <Link to='abou' smooth={true} duration={500}>
                 About{" "}
               </Link>
             </li>
             <li className='cursor-pointer capitalize '>
-              <Link to='testi' smooth={true} offset={400} duration={500}>
+              <Link to='team' smooth={true} duration={500}>
+                Team{" "}
+              </Link>
+            </li>
+            <li className='cursor-pointer capitalize '>
+              <Link to='testi' smooth={true} duration={500}>
                 Testimonial{" "}
               </Link>
             </li>
             <li className='cursor-pointer capitalize '>
-              <Link to='menu' smooth={true} offset={-500} duration={-500}>
+              <Link to='menu' smooth={true} duration={-500}>
                 menu{" "}
               </Link>
             </li>
             <li className='cursor-pointer capitalize '>
-              <Link to='footer' smooth={true} offset={200} duration={500}>
+              <Link to='footer' smooth={true} duration={500}>
                 footer{" "}
               </Link>
             </li>
@@ -63,9 +68,8 @@ const Navbar = () => {
             <li className=' cursor-pointer text-xl capitalize py-3 px-8 '>
               <Link
                 onClick={handleClick}
-                to='about'
+                to='home'
                 smooth={true}
-                offset={-200}
                 duration={500}
               >
                 Home{" "}
@@ -74,9 +78,8 @@ const Navbar = () => {
             <li className=' cursor-pointer text-xl capitalize py-3 px-8 '>
               <Link
                 onClick={handleClick}
-                to='about'
+                to='abou'
                 smooth={true}
-                offset={-400}
                 duration={500}
               >
                 About{" "}
@@ -85,9 +88,18 @@ const Navbar = () => {
             <li className='cursor-pointer text-xl capitalize py-3 px-8 '>
               <Link
                 onClick={handleClick}
+                to='team'
+                smooth={true}
+                duration={500}
+              >
+                Team{" "}
+              </Link>
+            </li>
+            <li className='cursor-pointer text-xl capitalize py-3 px-8 '>
+              <Link
+                onClick={handleClick}
                 to='testi'
                 smooth={true}
-                offset={-200}
                 duration={500}
               >
                 Testimonial{" "}
@@ -98,7 +110,6 @@ const Navbar = () => {
                 onClick={handleClick}
                 to='menu'
                 smooth={true}
-                offset={-500}
                 duration={500}
               >
                 menu{" "}
@@ -109,7 +120,6 @@ const Navbar = () => {
                 onClick={handleClick}
                 to='footer'
                 smooth={true}
-                offset={-600}
                 duration={500}
               >
                 footer{" "}
@@ -123,15 +133,15 @@ const Navbar = () => {
 };
 
 //  <ul className='hidden md:flex' >
-//   <li><Link to='home' smooth={true} offset={50} duration={500} >Home</Link> </li>
+//   <li><Link to='home' smooth={true} uration={500} >Home</Link> </li>
 //  </ul>
 export default Navbar;
 // {/* <ul className={!nav ? 'hidden' :' absolute bg-zinc-200 w-full px-8'}>
-// <li className="border-b-2 border-zinc-300 w-full"><Link onClick={handleClose} to="home" smooth={true}offset={50} duration={500} >Home </Link></li >
-//   <li className="border-b-2 border-zinc-300 w-full"><Link onClick={handleClose}  to="about" smooth={true}offset={50} duration={500} >About </Link></li >
-//   <li className="border-b-2 border-zinc-300 w-full"><Link onClick={handleClose} to="support" smooth={true}offset={50} duration={500} >Support </Link></li >
-//   <li className="border-b-2 border-zinc-300 w-full"><Link onClick={handleClose} to="platform" smooth={true}offset={50} duration={500} >Platfom </Link></li >
-//   <li className="border-b-2 border-zinc-300 w-full"><Link onClick={handleClose} to="pricing" smooth={true}offset={50} duration={500} >Pricing </Link></li>
+// <li className="border-b-2 border-zinc-300 w-full"><Link onClick={handleClose} to="home" smooth={true}uration={500} >Home </Link></li >
+//   <li className="border-b-2 border-zinc-300 w-full"><Link onClick={handleClose}  to="about" smooth={true}uration={500} >About </Link></li >
+//   <li className="border-b-2 border-zinc-300 w-full"><Link onClick={handleClose} to="support" smooth={true}uration={500} >Support </Link></li >
+//   <li className="border-b-2 border-zinc-300 w-full"><Link onClick={handleClose} to="platform" smooth={true}uration={500} >Platfom </Link></li >
+//   <li className="border-b-2 border-zinc-300 w-full"><Link onClick={handleClose} to="pricing" smooth={true}uration={500} >Pricing </Link></li>
 //     <div className="flex flex-col my-4">
 //   <button className=" bg-transparent text-indigo-600 px-8 py-3 mb-4" >aign in</button>
 //   <button className="px-8 py-3" >aign up</button>

@@ -10,9 +10,7 @@
 
 # production
 /build
-fffff
-install.html
-Formvalidation.js
+
 # misc
 .DS_Store
 .env.local

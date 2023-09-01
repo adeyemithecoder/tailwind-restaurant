@@ -3,8 +3,8 @@ import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <section name='home' className='w-full h-screen'>
-      <div className='w-full h-screen absolute bg-gray-900/95'>
+    <section name='home' className='mt-[68px] section-min-heght'>
+      <div className='w-full section-min-heght absolute  bg-gray-900/95'>
         <img
           src={require("./images/2.jpg")}
           className='h-full absolute mix-blend-overlay w-full'
@@ -12,9 +12,9 @@ const Home = () => {
           alt=''
         />
       </div>
-      <div className='relative h-screen text-white flex flex-col justify-center items-center'>
+      <div className='relative  section-min-heght text-white flex section-min-heght flex-col justify-center items-center'>
         <h2 className='font-bold text-6xl text-center '>Dine Out Restaurant</h2>
-        <p className=' text-center max-w-xs my-5 mx-2'>
+        <p className=' text-center font-bold max-w-xs my-5 mx-2'>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
           ipsum repellendus deserunt aperiam cumque rerum?
         </p>
